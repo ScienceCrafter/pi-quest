@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Pi Quest v1.0</title>
+  <script src="js/pi.js"></script>
+  <script src="js/main.js"></script>
+  <style>
+  :root {
+    --speed-color: #000;
+    --slow-color: #000;
+  }
+  p {
+    display: inline;
+    font-size: 30px;
+  }
+  </style>
+</head>
+<body onkeypress="keyPress(event)">
+  <div style="border:1px solid;">
+    <p id="pi" style="overflow-wrap: break-word;font-size:120px;margin-left:15px;">3.</p>
+  </div><br><br>
+  <div id="infobox" style="text-align:center;">
+    <p id="score">score: 0</p><br>
+    <p id="mistakes">mistakes: 0</p><br>
+    <button onclick="toggleSpeedys()" style="font-size:30px;">speedrun mode</button><br>
+    <p id="speed" hidden="true">speed: 0.0 DPS</p><br>
+    <p id="last_int" hidden="true">last interval: 0.000s</p><br><br>
+    <p id="help">type as many digits as you know, when you're done, press enter<br>(first digit is 1 btw)</p>
+  </div>
+</body>
+</html>
